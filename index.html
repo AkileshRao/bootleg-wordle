@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="app-container" data-mode="light">
+        <button class="restart-btn">Restart</button>
+        <div class="toggle-switch-container">
+            <div class="toggle-switch" data-status="light">
+                <div class="toggle-switch-trigger"></div>
+            </div>
+        </div>
+        <div class="error-toast" data-status="false">
+            This does not look like a valid word.
+        </div>
+        <div class="victory-toast" data-visibility-status="false">
+            <h1 style="text-align: center; margin: .5rem;">You win.</h1>
+            <p style="text-align: center; margin: 0;">Click <span class="restart-game">here</span> to restart.</p>
+        </div>
+        <div class="wordle-grid">
+            <div class="grid-row" id="grid-row-1" data-status="valid">
+                <div class="grid-cell" id="grid-cell-11" data-state="empty" data-animation="idle"></div>
+                <div class="grid-cell" id="grid-cell-12" data-state="empty" data-animation="idle"></div>
+                <div class="grid-cell" id="grid-cell-13" data-state="empty" data-animation="idle"></div>
+                <div class="grid-cell" id="grid-cell-14" data-state="empty" data-animation="idle"></div>
+                <div class="grid-cell" id="grid-cell-15" data-state="empty" data-animation="idle"></div>
+            </div>
+            <div class="grid-row" id="grid-row-2" data-status="valid">
+                <div class="grid-cell" id="grid-cell-21" data-state="empty" data-animation="idle"></div>
+                <div class="grid-cell" id="grid-cell-22" data-state="empty" data-animation="idle"></div>
+                <div class="grid-cell" id="grid-cell-23" data-state="empty" data-animation="idle"></div>
+                <div class="grid-cell" id="grid-cell-24" data-state="empty" data-animation="idle"></div>
+                <div class="grid-cell" id="grid-cell-25" data-state="empty" data-animation="idle"></div>
+            </div>
+            <div class="grid-row" id="grid-row-3" data-status="valid">
+                <div class="grid-cell" id="grid-cell-31" data-state="empty" data-animation="idle"></div>
+                <div class="grid-cell" id="grid-cell-32" data-state="empty" data-animation="idle"></div>
+                <div class="grid-cell" id="grid-cell-33" data-state="empty" data-animation="idle"></div>
+                <div class="grid-cell" id="grid-cell-34" data-state="empty" data-animation="idle"></div>
+                <div class="grid-cell" id="grid-cell-35" data-state="empty" data-animation="idle"></div>
+            </div>
+            <div class="grid-row" id="grid-row-4" data-status="valid">
+                <div class="grid-cell" id="grid-cell-41" data-state="empty" data-animation="idle"></div>
+                <div class="grid-cell" id="grid-cell-42" data-state="empty" data-animation="idle"></div>
+                <div class="grid-cell" id="grid-cell-43" data-state="empty" data-animation="idle"></div>
+                <div class="grid-cell" id="grid-cell-44" data-state="empty" data-animation="idle"></div>
+                <div class="grid-cell" id="grid-cell-45" data-state="empty" data-animation="idle"></div>
+            </div>
+            <div class="grid-row" id="grid-row-5" data-status="valid">
+                <div class="grid-cell" id="grid-cell-51" data-state="empty" data-animation="idle"></div>
+                <div class="grid-cell" id="grid-cell-52" data-state="empty" data-animation="idle"></div>
+                <div class="grid-cell" id="grid-cell-53" data-state="empty" data-animation="idle"></div>
+                <div class="grid-cell" id="grid-cell-54" data-state="empty" data-animation="idle"></div>
+                <div class="grid-cell" id="grid-cell-55" data-state="empty" data-animation="idle"></div>
+            </div>
+            <div class="grid-row" id="grid-row-6" data-status="valid">
+                <div class="grid-cell" id="grid-cell-61" data-state="empty" data-animation="idle"></div>
+                <div class="grid-cell" id="grid-cell-62" data-state="empty" data-animation="idle"></div>
+                <div class="grid-cell" id="grid-cell-63" data-state="empty" data-animation="idle"></div>
+                <div class="grid-cell" id="grid-cell-64" data-state="empty" data-animation="idle"></div>
+                <div class="grid-cell" id="grid-cell-65" data-state="empty" data-animation="idle"></div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js" type="module"></script>
+</body>
+
+</html>
